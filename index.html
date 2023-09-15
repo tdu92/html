@@ -4,9 +4,75 @@
     <meta charset="utf-8">
     <title>Hello tduweb</title>
 </head>
+<style>
+    .table-employee{
+        width: 500px
+        boder-collapsed: collapse;
+    }
+    tr, td {
+        border: 1px solid black;
+    }
+    #table-header {
+        background-color: turquoise;
+
+    }
+</style>
 <body>
 <p>doan van ban<p>
 <a href="https://www.24h.com.vn">24h.com
 </a>
 <input type="password">
 <img src="https://dantri.com.vn/xa-hoi/cong-an-ha-noi-vu-chay-chung-cu-mini-khien-56-nguoi-tu-vong-20230913190721464.htm">
+<form action="" method="post"   enctype="multipart/form-data">
+    <h2>Login</h2>
+    <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    </div>
+    <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    </div>
+    <div>
+           <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember me</label>
+    </div>
+    <button type="submit">Login</button>
+    <button type="reset">Clear</button>
+    <label for="avatar">Avatar</label>
+    <input type="file" id="avatar" name="avatar">
+</form>
+<table class="table-employee">
+    <caption>Employees List</caption>
+    <tr id="table-header">
+        <td>STT</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+    <tr>
+        <td colspan="2">1 Huong</td>
+        <td>huonghoa@gmail.com</td>
+        <td>12345</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Hung</td>
+        <td>hunghau@gmail.com</td>
+        <td>456788</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td rowspan="2">Hoang
+            Hien</td>
+        <td>hoanghau@gmail.com</td>
+        <td>78899</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>hien@gmail.com</td>
+        <td>878764</td>
+    </tr>
+</table>
+</body>
+</html>
