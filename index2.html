@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<button type="submit">Login</button>
+<button type="reset">Reset</button>
+<p id="message">Day la lop hoc </p>
+<button onclick="result()">Result</button>
+<br>
+<!-- Ứng dụng chuyển đổi tiền tệ -->
+<table>
+<tr>
+    <td>
+        <label for="money">So tien</label>
+        <input type="number" id="money">
+    </td>
+    <td>
+        <label for="from">From</label>
+        <select name="" id="from" >
+            <option value="1">USD</option>
+            <option value="23000">VND</option>
+            <option value="147.9">JPY</option>
+            <option value="0.94">EUR &euro; &#8364;</option>
+        </select>
+    </td>
+    <td>
+        <label for="to">To</label>
+        <select name="" id="to">
+            <option value="1">USD $</option>
+            <option value="23000">VND</option>
+            <option value="147.9">JPY &yen; &#165;</option>
+            <option value="0.94">EUR &euro; &#8364;</option>
+        </select>
+    </td>
+    <td>
+        <button onclick="convertMoney()">Convert</button>
+    </td>
+</tr>
+</table>
+<p id="result"> Kết quả đổi là </p>
+<!-- Các file nhúng vào html được đặt xuống cuối thẻ body -->
+<script src="convertMoney.js"></script>
+<script src="my.js"></script>
 </body>
 </html>
